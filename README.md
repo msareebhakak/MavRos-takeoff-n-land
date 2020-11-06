@@ -14,13 +14,13 @@ sudo rosdep init
 rosdep update
 ```
 ```
-echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
 ```
-sudo apt install ros-kinetic-mavros ros-kinetic-mavros-extras
-sudo /opt/ros/kinetic/lib/mavros/install_geographiclib_datasets.sh
+sudo apt install ros-melodic-mavros ros-melodic-mavros-extras
+sudo /opt/ros/melodic/lib/mavros/install_geographiclib_datasets.sh
 ```
 
 ## Download and run PX4 Gazebo simulator
@@ -28,9 +28,17 @@ Prepare tools for building PX4
 ```
 sudo apt-get update
 sudo apt-get install python-argparse git-core wget zip python-empy qtcreator cmake build-essential genromfs -y
-sudo apt-get install ant protobuf-compiler libeigen3-dev libopencv-dev openjdk-8-jdk openjdk-8-jre clang-3.5 lldb-3.5 python-toml python-numpy -y
-sudo apt-get install python-pip -y
-sudo -H pip install pandas jinja2
+sudo apt-get install ant protobuf-compiler libeigen3-dev libopencv-dev openjdk-8-jdk openjdk-8-jre clang-3.9 lldb-3.9 python-toml python-numpy -y
+sudo apt-get install python3-argparse git-core wget zip python3-empy qtcreator cmake build-essential genromfs -y
+sudo apt-get install ant protobuf-compiler libeigen3-dev libopencv-dev openjdk-8-jdk openjdk-8-jre clang-3.9 lldb-3.9 python3-toml python3-numpy -y
+sudo apt-get install python-pip3 -y
+sudo -H pip3 install pandas jinja2
+
+sudo apt install libgstreamer1.0-dev
+sudo apt install gstreamer1.0-plugins-good
+sudo apt install gstreamer1.0-plugins-bad
+sudo apt install gstreamer1.0-plugins-ugly
+
 ```
 Download source files from Github
 ```
