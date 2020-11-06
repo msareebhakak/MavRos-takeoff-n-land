@@ -106,6 +106,11 @@ cd ~/catkin_ws
 source ./devel/setup.bash 
 rosrun ex1 takeoff_n_land 
 ```
+For terminal based commands
+```
+rosrun mavros mavsys mode -c OFFBOARD
+rosrun mavros mavsafety arm 
+```
 ![Alt text](/final_res.png?raw=true "Screenshot of successful run")
 
 [1] http://wiki.ros.org/kinetic/Installation/Ubuntu
